@@ -50,3 +50,36 @@ div p {
 a button {
   margin-top: 3%;
 }
+
+.contenedor {
+  width: 780px;
+  margin: 0 auto;
+}
+
+.progressbar {
+  width: 11.1111111111%;
+  height: 20px;
+  background-color: rgb(177, 20, 20);
+  color: white;
+}
+
+.tarjeta {
+  background-color: rgb(45, 175, 129);
+  color: rgb(19, 9, 104);
+}
+
+h1 {
+  text-shadow: 1px 1px #333, 2px 2px #444;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}

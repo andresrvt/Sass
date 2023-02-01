@@ -73,3 +73,55 @@ a{
     }
 }
 
+@function media($a, $b) {
+    @return ($a + $b) / 2;
+  }
+  
+.contenedor {
+    width: media(960px,600px);
+    margin: 0 auto;
+}
+
+@function percentage($value, $total) {
+    @return ($value / $total) * 100%;
+}
+
+.progressbar {
+    width: percentage(50, 450);
+    height: 20px;
+    background-color: rgb(177, 20, 20);
+    color: white;
+}
+
+@function opacidad($background-color) {
+    $opacity: opacity($background-color);
+    @if ($opacity > 50%) {
+      @return rgb(17, 135, 24);
+    } @else {
+      @return rgb(19, 9, 104);
+    }
+}
+  
+.tarjeta {
+    background-color: rgb(45, 175, 129);
+    color: opacidad(#fff);
+  }
+  
+@mixin text-shadow($shadows...) {
+  text-shadow: $shadows;
+}
+
+h1 {
+  @include text-shadow(1px 1px #333, 2px 2px #444);
+}
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.center {
+    @include center;
+}
+  
