@@ -46,3 +46,30 @@ thead{
     }
 }
 
+tbody{
+    tr{
+        td{
+            border-color: blue;
+            border: 3px solid;
+        }
+    }
+}
+
+ul{
+    li{
+        letter-spacing: 3px;
+    }
+}
+
+div{
+    p{
+        font-style: italic;
+    }
+}
+
+a{
+    button{
+        margin-top: 3%;
+    }
+}
+
